@@ -26,7 +26,7 @@ public class UpdateManager {
         if (plugin.isUpdate()) {
             reloadUpdater();
             if (isUpdate() == 2) {
-                chat.alert("&eAn update has been found.");
+                chat.alert("&eAn update has been found " + plugin.getDescription().getVersion() + " -> " + updater.getVersion());
                 chat.log("Update found", AuctionHouse.getInstance().isDebug());
             }
         } else {

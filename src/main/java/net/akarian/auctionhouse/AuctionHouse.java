@@ -111,7 +111,7 @@ public final class AuctionHouse extends JavaPlugin {
         chat.log("MySQL Successfully Loaded", debug);
         chat.log("Loading UpdateManager...", debug);
         update = getConfigFile().isUpdates();
-        updateManager = new UpdateManager(this);
+      //  updateManager = new UpdateManager(this);
         chat.log("UpdateManager Successfully Loaded", debug);
         chat.log("Loading GUIManager...", debug);
         guiManager = new GUIManager();
