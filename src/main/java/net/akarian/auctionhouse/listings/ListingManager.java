@@ -1516,6 +1516,11 @@ public class ListingManager {
 
                     //Alert near expire
                     for (User user : AuctionHouse.getInstance().getUserManager().getUsers()) {
+
+                        if(user.getUsername() == null) {
+                            Bukkit.getServer().getConsoleSender().sendMessage("[ActionHouse] " + user.getUuid() + " Is null");
+                        }
+
                         if (!user.getUserSettings().isAlertNearExpire()) continue;
                         if (!user.getUserSettings().getNotified().contains(listing) && end - now < user.getUserSettings().getAlertNearExpireTime() && Bukkit.getPlayer(user.getUuid()) != null) {
                             user.getUserSettings().getNotified().add(listing);

@@ -16,7 +16,7 @@ Default Player Settings:
   Expire Notify: false
   Expire Time: 300
   Bought Notify: false
-  Create Notify: true
+  Create Notify: false
   Auto Confirm Listing: false
   Sounds: true
 Creative Listing: false

@@ -52,10 +52,10 @@ public class ListSubCommand extends AkarianCommand {
             return;
         }
 
-        if (!AuctionHouse.getInstance().getListingManager().checkBlacklist(itemStack)) {
-            chat.sendMessage(p, AuctionHouse.getInstance().getMessageManager().getMessage(MessageType.MESSAGE_BLACKLIST_BLOCKED));
-            return;
-        }
+//        if (!AuctionHouse.getInstance().getListingManager().checkBlacklist(itemStack)) {
+//            chat.sendMessage(p, AuctionHouse.getInstance().getMessageManager().getMessage(MessageType.MESSAGE_BLACKLIST_BLOCKED));
+//            return;
+//        }
 
         //Check max listings
         AtomicInteger maxListings = new AtomicInteger();

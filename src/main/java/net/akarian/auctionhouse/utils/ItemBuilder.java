@@ -29,7 +29,7 @@ public class ItemBuilder {
         for(String s : settings) {
             switch (s) {
                 case "shine":
-                    item.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1);
+                    item.addUnsafeEnchantment(Enchantment.BLAST_PROTECTION, 1);
                     break;
                 case "hide_attributes":
                 case "h_a":
